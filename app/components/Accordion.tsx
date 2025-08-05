@@ -10,7 +10,7 @@ import styled from 'styled-components';
 
 // Main accordion container
 const AccordionItem = styled.div`
-  border: 1px solid #e0e0e0;
+  border: 1px solid rgb(208, 202, 14);
   border-radius: 8px;
   margin-bottom: 8px;
   overflow: hidden;
@@ -20,7 +20,7 @@ const AccordionItem = styled.div`
 const AccordionHeader = styled.button`
   width: 100%;
   padding: 16px 20px;
-  background: #f8f9fa;
+  background:rgb(14, 66, 208);
   border: none;
   text-align: left;
   cursor: pointer;
@@ -30,11 +30,11 @@ const AccordionHeader = styled.button`
   transition: background-color 0.2s ease;
   
   &:hover {
-    background: #e9ecef;
+    background:rgb(236, 8, 213);
   }
   
   &:focus {
-    outline: 2px solid #007bff;
+    outline: 2px solid rgb(38, 122, 65);
     outline-offset: -2px;
   }
 `;
@@ -44,14 +44,14 @@ const AccordionTitle = styled.h3`
   margin: 0;
   font-size: 16px;
   font-weight: 600;
-  color: #333;
+  color: rgb(17, 189, 198);
 `;
 
 // Preview text in the header
 const AccordionPreview = styled.p`
   margin: 4px 0 0 0;
   font-size: 14px;
-  color: #666;
+  color: rgb(121, 3, 3);
 `;
 
 // Chevron icon that rotates
@@ -65,8 +65,8 @@ const ChevronIcon = styled.span<{ isOpen: boolean }>`
 const AccordionContent = styled.div<{ isOpen: boolean }>`
   display: ${props => props.isOpen ? 'block' : 'none'};
   padding: 16px 20px;
-  background: white;
-  border-top: 1px solid #e0e0e0;
+  background: rgb(71, 71, 71);
+  border-top: 1px solid rgb(79, 14, 208);
 `;
 
 interface AccordionProps {

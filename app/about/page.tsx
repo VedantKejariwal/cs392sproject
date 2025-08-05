@@ -97,7 +97,7 @@ export default function AboutPage() {
         <MemberCard>
           <MemberName>Veer</MemberName>
           <PlaceholderText>
-            Veer can add their information here when they work on their part of the project.
+            Veer
             They are responsible for the Image of the Day feature.
           </PlaceholderText>
         </MemberCard>
@@ -106,7 +106,7 @@ export default function AboutPage() {
         <MemberCard>
           <MemberName>Jeff</MemberName>
           <PlaceholderText>
-            Jeff can add their information here when they work on their part of the project.
+            Jeff
             They are responsible for the Quote of the Day feature.
           </PlaceholderText>
         </MemberCard>

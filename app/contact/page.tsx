@@ -127,12 +127,12 @@ export default function ContactPage() {
           
           <TeamMember>
             <MemberName>Veer</MemberName>
-            <PlaceholderText>GitHub link will be added by Veer</PlaceholderText>
+            <PlaceholderText>GitHub link</PlaceholderText>
           </TeamMember>
           
           <TeamMember>
             <MemberName>Jeff</MemberName>
-            <PlaceholderText>GitHub link will be added by Jeff</PlaceholderText>
+            <PlaceholderText>GitHub link</PlaceholderText>
           </TeamMember>
         </TeamList>
         

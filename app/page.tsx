@@ -69,17 +69,17 @@ export default function HomePage() {
         {/* Demonstration of InteractiveCard component */}
         <CardGrid>
           <InteractiveCard
-            imgSrc="/next.svg"
+            imgSrc="/LG1a.gif"
             title="Interactive Cards"
             description="These cards show hover effects and can display any content you want."
           />
           <InteractiveCard
-            imgSrc="/vercel.svg"
+            imgSrc="/hellohelios.gif"
             title="Responsive Design"
             description="All components work well on different screen sizes and devices."
           />
           <InteractiveCard
-            imgSrc="/file.svg"
+            imgSrc="/animation.gif"
             title="Easy to Use"
             description="Simple and clean code that's easy to understand and modify."
           />
