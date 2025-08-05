@@ -3,7 +3,6 @@
 /**
  * Placeholder component for Image of the Day feature.
  * To be implemented by: Veer
- * Component by: Vedant Kejariwal
  */
 'use client';
 import styled from 'styled-components';

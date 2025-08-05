@@ -3,7 +3,6 @@
 /**
  * Placeholder component for Quote of the Day feature.
  * To be implemented by: Jeff
- * Component by: Vedant Kejariwal
  */
 'use client';
 import styled from 'styled-components';
