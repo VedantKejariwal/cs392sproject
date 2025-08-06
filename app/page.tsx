@@ -58,7 +58,7 @@ export default function HomePage() {
       <WelcomeSection>
         <MainHeadline>Welcome to Our CS 392S Project</MainHeadline>
         
-        {/* Placeholder components for teammates */}
+        {/* Main Components */}
         <ImageOfTheDay />
         <QuoteOfTheDay />
       </WelcomeSection>
@@ -117,9 +117,9 @@ export default function HomePage() {
           title="Team Members"
           preview="Meet our development team"
         >
-          <p><strong>Vedant Kejariwal:</strong> Responsible for core components and website structure</p>
-          <p><strong>Veer:</strong> Quote of the day fature</p>
-          <p><strong>Jeff:</strong> Image of the Day feature</p>
+          <p><strong>Vedant Kejariwal:</strong> Responsible for Core components and website structure</p>
+          <p><strong>Veer Agrawal:</strong> Responsible for the Quote of the day component</p>
+          <p><strong>Jeffrey Zhou:</strong> Responsible for the Image of the Day component</p>
         </Accordion>
       </FeaturesSection>
     </MainContainer>

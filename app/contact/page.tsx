@@ -133,9 +133,9 @@ export default function ContactPage() {
           </TeamMember>
           
           <TeamMember>
-            <MemberName>Jeff</MemberName>
-            <GitHubLink href="" target="_blank" rel="noopener noreferrer">
-              GitHub: @
+            <MemberName>Jeffrey Zhou</MemberName>
+            <GitHubLink href="https://github.com/buildingalamp" target="_blank" rel="noopener noreferrer">
+              GitHub: @buildingalamp
             </GitHubLink>
           </TeamMember>
         </TeamList>

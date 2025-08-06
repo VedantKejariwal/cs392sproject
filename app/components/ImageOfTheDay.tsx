@@ -1,33 +1,88 @@
 // app/components/ImageOfTheDay.tsx
 
-/**
- * Placeholder component for Image of the Day feature.
- * To be implemented by: Veer
+/*
+ * Author: Jeffrey Zhou
+ * Displays the NASA image of the day, using getImage function which calls the NASA Api
  */
+
 'use client';
+import { useState, useEffect } from "react";
 import styled from 'styled-components';
+import { getImage } from "@/lib/images";
 
 // Simple placeholder container
-const PlaceholderBox = styled.div`
-  background: #f8f9fa;
-  border: 2px dashed #dee2e6;
+
+const ImageDiv = styled.div`
+  border: 3px solid #ffffffff;
   border-radius: 8px;
-  padding: 40px 20px;
-  text-align: center;
-  margin: 20px 0;
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9; // keeps image ratio consistent
+
+  overflow: hidden;
+  cursor: pointer;
+
+  &:hover img {
+    opacity: 0.5;
+  }
+
+  &:hover ${''} div {
+    opacity: 1;
+  }
 `;
 
-// Placeholder text
-const PlaceholderText = styled.p`
-  color: #6c757d;
-  font-size: 16px;
-  margin: 0;
+const StyledImage = styled.img`
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: opacity 0.3s ease;
+`;
+
+const OverlayText = styled.div`
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+  text-align: justify;
+
+  color: white;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  padding: 5%;
+`;
+
+const StyledTitle = styled.div`
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  font-weight: bold;
+  margin-bottom: 0.5em;
+`;
+
+const StyledExplanation = styled.div`
+  font-size: clamp(1vw, 1.2rem);
 `;
 
 export default function ImageOfTheDay() {
-  return (
-    <PlaceholderBox>
-      <PlaceholderText>Image component will go here - Veer</PlaceholderText>
-    </PlaceholderBox>
-  );
+    const [image, setImage] = useState<{ explanation: string; title: string; url: string } | null>(null);
+
+    useEffect(() => {
+        (async () => {
+          const e = await getImage();
+          setImage(e);
+        })();
+      }, []);
+    
+    if (!image) return "...";
+  
+    return (
+      <ImageDiv>
+          <StyledImage src={image.url} alt="Image"/>
+          <OverlayText>
+            <StyledTitle>{image.title}</StyledTitle>
+            <StyledExplanation>{image.explanation}</StyledExplanation>
+          </OverlayText>
+      </ImageDiv> 
+    );
 } 

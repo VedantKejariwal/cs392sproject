@@ -104,11 +104,16 @@ export default function AboutPage() {
 
         {/* Jeff's placeholder section */}
         <MemberCard>
-          <MemberName>Jeff</MemberName>
-          <PlaceholderText>
-            Jeff
-            They are responsible for the Quote of the Day feature.
-          </PlaceholderText>
+          <MemberName>Jeffrey Zhou</MemberName>
+          <MemberInfo>
+            Computer Science student at Boston University. Incoming law student.
+          </MemberInfo>
+          <MemberInfo>
+            Implemented the Image of the day feature.
+          </MemberInfo>
+          <MemberInfo>
+            Interested in Intellectual Property within Tech.
+          </MemberInfo>
         </MemberCard>
       </TeamSection>
     </AboutContainer>
