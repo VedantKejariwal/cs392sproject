@@ -126,13 +126,17 @@ export default function ContactPage() {
           </TeamMember>
           
           <TeamMember>
-            <MemberName>Veer</MemberName>
-            <PlaceholderText>GitHub link</PlaceholderText>
+            <MemberName>Veer Agrawal</MemberName>
+            <GitHubLink href="https://github.com/veeragrawal" target="_blank" rel="noopener noreferrer">
+              GitHub: @VeerAgrawal
+            </GitHubLink>
           </TeamMember>
           
           <TeamMember>
             <MemberName>Jeff</MemberName>
-            <PlaceholderText>GitHub link</PlaceholderText>
+            <GitHubLink href="" target="_blank" rel="noopener noreferrer">
+              GitHub: @
+            </GitHubLink>
           </TeamMember>
         </TeamList>
         

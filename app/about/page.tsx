@@ -95,11 +95,11 @@ export default function AboutPage() {
 
         {/* Veer's placeholder section */}
         <MemberCard>
-          <MemberName>Veer</MemberName>
-          <PlaceholderText>
-            Veer
-            They are responsible for the Image of the Day feature.
-          </PlaceholderText>
+          <MemberName>Veer Agrawal</MemberName>
+          <MemberInfo>
+            Computer Science Major at Boston University. 
+            Implemented the Quote of the day feature. 
+          </MemberInfo>
         </MemberCard>
 
         {/* Jeff's placeholder section */}

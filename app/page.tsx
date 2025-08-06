@@ -118,8 +118,8 @@ export default function HomePage() {
           preview="Meet our development team"
         >
           <p><strong>Vedant Kejariwal:</strong> Responsible for core components and website structure</p>
-          <p><strong>Veer:</strong> Working on the Image of the Day feature</p>
-          <p><strong>Jeff:</strong> Developing the Quote of the Day feature</p>
+          <p><strong>Veer:</strong> Quote of the day fature</p>
+          <p><strong>Jeff:</strong> Image of the Day feature</p>
         </Accordion>
       </FeaturesSection>
     </MainContainer>
