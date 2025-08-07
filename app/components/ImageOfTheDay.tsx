@@ -10,8 +10,7 @@ import { useState, useEffect } from "react";
 import styled from 'styled-components';
 import { getImage } from "@/lib/images";
 
-// Simple placeholder container
-
+// Image Container
 const ImageDiv = styled.div`
   border: 3px solid #ffffffff;
   border-radius: 8px;
@@ -31,6 +30,7 @@ const ImageDiv = styled.div`
   }
 `;
 
+// Image sizing
 const StyledImage = styled.img`
   width: 100%;
   height: 100%;
@@ -38,6 +38,7 @@ const StyledImage = styled.img`
   transition: opacity 0.3s ease;
 `;
 
+// Overlay text container
 const OverlayText = styled.div`
   position: absolute;
   inset: 0;
@@ -54,17 +55,20 @@ const OverlayText = styled.div`
   padding: 5%;
 `;
 
+// Overlay Title text
 const StyledTitle = styled.div`
   font-size: clamp(1.5rem, 3vw, 2rem);
   font-weight: bold;
   margin-bottom: 0.5em;
 `;
 
+// Overlay Explanation text
 const StyledExplanation = styled.div`
   font-size: clamp(1vw, 1.2rem);
 `;
 
 export default function ImageOfTheDay() {
+    //use react hooks to avoid declaring client side function as async
     const [image, setImage] = useState<{ explanation: string; title: string; url: string } | null>(null);
 
     useEffect(() => {
@@ -74,6 +78,7 @@ export default function ImageOfTheDay() {
         })();
       }, []);
     
+    //loading text
     if (!image) return "...";
   
     return (
