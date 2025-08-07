@@ -44,14 +44,14 @@ const AccordionTitle = styled.h3`
   margin: 0;
   font-size: 16px;
   font-weight: 600;
-  color: rgb(17, 189, 198);
+  color: rgba(255, 255, 255, 1);
 `;
 
 // Preview text in the header
 const AccordionPreview = styled.p`
   margin: 4px 0 0 0;
   font-size: 14px;
-  color: rgb(121, 3, 3);
+  color: rgba(255, 255, 255, 1);
 `;
 
 // Chevron icon that rotates
